@@ -1,0 +1,5 @@
+bitsandbytes
+accelerate
+transformers>=4.0.0
+peft>=0.0.0
+datasets>=1.0.0
