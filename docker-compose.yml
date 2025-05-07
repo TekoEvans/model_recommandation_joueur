@@ -1,0 +1,25 @@
+
+services:
+  inference:
+    build:
+      context: ./inference
+    command: sleep infinity
+    volumes:
+      - .:/workspace:cached
+    ports:
+      - "8000:8000"
+
+    links: 
+      - finetuning
+
+  finetuning:
+    build:
+      context: ./finetuning
+    command: sleep infinity
+    volumes:
+      - .:/workspace:cached
+      
+
+  
+    
+

@@ -1,0 +1,9 @@
+{
+
+    "name": "finetuning_container",
+    "service": "finetuning",
+    "dockerComposeFile": ["../../docker-compose.yml"],
+    "shutdownAction": "none",
+    "workspaceFolder":"/workspace/finetuning"
+
+}
